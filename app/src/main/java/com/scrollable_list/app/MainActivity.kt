@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.scrollable_list.app.navigators.NavigatorController
 import com.scrollable_list.app.ui.theme.ScrollableListAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,6 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ScrollableListAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) {
+                    NavigatorController()
                 }
             }
         }
